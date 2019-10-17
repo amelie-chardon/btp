@@ -1,0 +1,348 @@
+/* GENERALE */
+
+	html{
+		margin: 0;
+	}
+
+	body{
+		margin: 0;
+	}
+
+	@font-face{
+		font-family: Parade;
+		src: url("Polices/parade.ttf");
+	}
+
+	@font-face{
+		font-family: GeosansLight;
+		src: url("Polices/GeosansLight.ttf");
+	}
+
+/* HEADER */
+
+	header{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 20px;
+		height: 8vh;
+		font-family: GeosansLight;
+		background-color: #FFFFFF;
+	}
+
+	#logo{
+		height: 50px;
+		padding: 10px;
+	}
+
+	header nav{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	header ul{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		list-style-type: none;
+	}
+
+	header li{
+		padding: 0 20px;
+	}
+
+	header li a{
+		font-size: 22px;
+		color: #000000;
+		text-decoration: none;
+	}
+	
+	header li a:hover{
+		color: #e78200;
+		border-bottom: solid 2px #e78200;
+	}
+
+/* FOOTER */
+
+	footer{
+		display: flex;
+		flex-direction: row;
+		background-color: #000000;
+		color: #FFFFFF;
+		font-size: 22px;
+		font-family: GeosansLight;
+	}
+
+	footer ul{
+		padding: 0;
+		list-style-type: none;
+	}
+
+	footer li a{
+		font-size: 18px;
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+
+	footer h2{
+		margin: 0;
+	}
+
+	.footer_1{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 50vw;
+		padding: 2vh;
+	}
+
+/* HAUT DE PAGE */
+
+	#haut_de_page{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		height: 92vh;
+		font-family: Parade;
+		background-image: url("Images/Sans-titre1-Récupéré.gif");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		font-size: 50px;
+		color: #FFFFFF;
+		text-shadow: 0 0 10px #000000;
+	}
+
+	#lien_contact{
+		background-color: #e78200;
+		text-decoration: none;
+		padding: 15px 100px;
+		font-size: 30px;
+		text-shadow: 0 0 0 #000000;
+		border-radius: 60px;
+		text-align: center;
+		color: #FFFFFF;
+		font-family: GeosansLight;
+	}
+
+/* PRESENTATION */
+
+		#presentation{
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			background-color: #000000;
+			width: 100vw;
+			height: 92vh;
+			overflow: scroll;
+		}
+
+		#block{
+			padding: 3vw 0;
+		}
+
+		.block_1{
+			width: 50vw;
+			background-color: #FFFFFF;
+			text-align: center;
+			padding: 3vw;
+			margin: 0;
+			font-family: GeosansLight;
+		}
+
+		.block_1 h1{
+			font-size: 30px;
+			padding-bottom: 3vw;
+			margin: 0;
+		}
+
+		.block_1 p{
+			font-size: 20px;
+			margin: 0;
+		}
+
+		.photo{
+			width: 56vw;
+			margin: 0;
+			vertical-align: middle;
+		}
+
+/* EQUIPE */
+
+	#equipe{
+		font-family: GeosansLight;
+		background-color: #e78200;
+		padding: 20px;
+		color: #FFFFFF;
+	}
+
+	.titre_equipe{
+		display:flex;
+		flex-direction:row;
+		justify-content:center;
+		font-size:2.5em;
+	}
+
+	.equipe_gauche{
+		display:flex;
+		flex-direction:row;
+		align-items:center;
+		margin-right:auto;
+		width:80%;
+	}
+
+	.equipe_droite{
+		display:flex;
+		flex-direction:row;
+		align-items:center;
+		width:80%;
+		margin-left:auto;
+	}
+
+	.equipe_droite img{
+		max-width:290px;
+		margin:30px;
+		border-radius: 50%;
+	}
+
+	.equipe_gauche img{
+		max-width:290px;
+		margin:30px;
+		border-radius: 50%;
+	}
+	.text_equipier{
+		display:flex;
+		flex-direction:column;
+		text-justify: auto;
+		font-size:1.2em;
+		flex-grow:1;
+		color: #FFFFFF;
+	}
+
+	.nom_equipier{
+		font-weight:bold;
+		font-size:1.4em;
+		color: #000000;
+	}
+
+/* REALISATIONS */
+
+	#realisation{
+		font-family: GeosansLight;
+		background-color: #e78200;
+		padding: 20px;
+		color: #FFFFFF;
+	}
+
+	.realisations-1{
+		display:flex;
+		flex-direction:row;
+		flex-wrap: wrap;
+		justify-content:space-evenly;
+		align-items:center;
+		font-family: GeosansLight;
+	}
+
+	.realisations-1 img {
+		display:flex;
+		flex-direction:row;
+		flex-wrap: wrap;
+		min-height:0;
+		min-width:0;
+		max-height:450px;
+		max-width:610px;
+		margin:20px;
+		filter: grayscale(80%);
+		transition: transform .2s;
+	}
+
+	#realisation2{
+		flex-grow:3;
+	}
+
+	#realisation3{
+		flex-grow:2;
+	}
+
+	#realisation4{
+		flex-grow:3;
+	}
+
+	#realisation5{
+		flex-grow:3;
+	}
+
+	.realisations-1 img:hover {
+		transform: scale(1.1); 
+		filter:none;
+	}
+
+
+/* CONTACT */
+
+	#contact{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items:center;
+		height: 92vh;
+		background-color: #e78200;
+		font-family: Parade;
+	}
+
+	#contact-2{
+		background-color: #FFFFFF;
+		width: 50%;
+		text-align: center;
+		padding-bottom: 2vh;
+		box-shadow: 0 0 10px #A05A00;
+	}
+
+	#contact h1{
+		font-size: 2vw;
+	}
+
+	#contact form{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items:center;
+		width: 100%;
+	}
+
+	#contact ::placeholder{
+		color: #000000;
+	}
+
+	#contact input[type=text], textarea{
+		border: 1px solid #000000;
+		padding: 1vh;
+		width: 90%;
+		margin: 1vh 0;
+		background-color: rgba(0, 0, 0, 0);
+		font-size: 18px;
+		color: #000000;
+		font-family: GeosansLight;
+	}
+
+	#contact textarea{
+		height: 15vh;
+	}
+
+	#contact #button{
+		padding: 1vw;
+		margin: 1vh 0 0.5vh 0;
+		border-radius: 30px;
+		background-color: #000000;
+		font-size: 20px;
+		width: 30%;
+		color: #FFFFFF;
+		font-family: GeosansLight;
+		box-sizing: content-box;
+		cursor: pointer;
+	}
